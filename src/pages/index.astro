@@ -11,7 +11,27 @@
 		<title>ChatBot</title>
 	</head>
 	<body>
-		
+
+		<main class="h-screen w-full pb-6 bg-gray-950 flex flex-col items-center justify-between text-neutral-200">
+			<header class="p-3 border-b w-full text-center">
+				<h1 class="text-xl">ChatBot</h1>
+			</header>
+	
+			<section class="flex flex-col items-center justify-center w-full h-full">
+				<h2 id="tittle" class="text-3xl">¿En qué puedo ayudarte?</h2>
+				<section id="chat" class="hidden w-5/6 max-w-3xl h-full flex-col gap-y-2 justify-end"></section>
+			</section>
+
+			<div class="relative w-11/12 max-w-3xl bg-gray-800 rounded-2xl text-lg">
+				<input type="text" name="question" id="question" placeholder="Escribe tu pregunta" autocomplete="off" class="w-10/12 px-4 py-3.5 focus:outline-0" />
+				<button id="btn" class="absolute right-0 bg-blue-800 rounded-r-2xl px-5 py-3.5 hover:cursor-pointer">Enviar</button>
+			</div>
+			
 		</main>
+			
+
+
+		</main>
+	<script src="/src/scripts/main.js"></script>
 	</body>
 </html>
